@@ -1,0 +1,55 @@
+div {
+    margin: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#side-bar{
+    float:left;
+    width:200px;
+    height: 100%;
+    background-color: slategrey;
+    opacity: 0.9;
+}
+.one-page{
+    width: 100%;
+    height: 100%;
+    background-color: #19FCFF;
+    margin: 0;
+}
+.side-bar-li {
+    list-style-type: none;
+    border-style:groove;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    margin: 1em ;
+    font-size: 1.5em ;
+    text-decoration: none;
+    width: inherit;
+    margin-left: 0;
+    
+}
+ul {
+    text-align: center;
+    margin : 1em;
+}
+ul li a {
+    font-size: 3em ;
+}
+#menu {
+    float: right;
+}
+#works-content {
+    float: none ;
+    
+}
+.menu-li {
+    display: inline-block;
+    margin-right: 1em;
+}
+body {
+    background-color: white;
+}
