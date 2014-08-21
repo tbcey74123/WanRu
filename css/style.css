@@ -1,6 +1,11 @@
 div* {
     margin: 0 auto;
 }
+
+div p {
+    position: static;
+    top: 50%;
+}
 a {
     color: white;
     text-decoration: none;
@@ -92,6 +97,7 @@ body {
     text-align: center;
     font-family: 標楷體;
     vertical-align: middle;
+    line-height: 50em ;
    
 }
 
@@ -106,7 +112,39 @@ body {
     
 }
 h1 {
-    text-align: center;
     font-size: 10em;
-    top: 30%;
+  
+}
+
+.about-me-div {
+    height: 100%;
+    width: 100%;
+    background-color:white;
+    color: white;
+    font-family: 新細明體;
+    text-align: center;
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+.about-me-middle {
+    background-color: grey;
+    height: 100%;
+    width:10%;
+    display: inline;
+    float: left;
+}
+.about-me-right {
+    height: 100% ;
+    float: right;
+    width: 45%;
+    display: inline;
+    
+}
+.about-me-left {
+    height: 100%;
+    float: left;
+    width: 45%;
+    display: inline;
+    
 }
