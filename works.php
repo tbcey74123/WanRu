@@ -6,15 +6,18 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/main.js"></script>
+	<script src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+	<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+	<script src="js/waterfall.js"></script>
      </head>
     <body>
         <div id="main-wrapper">
             <div id="header">
                 <div id="menu">
                     <ul>
-                        <li class="menu-li">茄子女孩X創意工作室</li>
-                        <li class="menu-li">茄子女孩X小漫畫</li>
-                        <li class="menu-li">光明專屬X奪目設計</li>
+			<li id="classA" class="menu-li">茄子女孩X創意工作室</li>
+                        <li id="classB" class="menu-li">茄子女孩X小漫畫</li>
+                        <li id="all-work" class="menu-li">光明專屬X奪目設計</li>
                     </ul>
                 </div>
             </div>
@@ -33,6 +36,14 @@
             </div>
             <div id="works-content">
                 <div id="main-frame">    
+<?php
+	$pic = glob('./pic/work/*/*');
+	shuffle($pic);
+	for( $i = 0; $pic[$i]; $i++) {
+		$catogary = split("/",$pic[$i])[3];
+		echo "<div class=\"item " . $catogary . "\"><img src=\"pic/" . str_replace("./pic/","",$pic[$i]) . "\"></img></div>";
+	}
+?>
                 </div>
                 <div id="nav-bar">                
                 </div>
