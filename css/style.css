@@ -54,6 +54,8 @@ ul li a {
     float: right;
     background-color: white;
     opacity: 0.75;
+    z-index: 1;
+    position: relative;
 }
 #works-content {
     float: none ;
@@ -150,4 +152,15 @@ h1 {
     float: left;
     width: 45%;
     display: inline;
+}
+
+.item {
+	display: inline-block;
+	overflow: hidden;
+	height: auto;
+	z-index: 0;
+}
+
+.item img{
+	padding: 2px;
 }
