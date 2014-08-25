@@ -70,7 +70,8 @@ body {
     left: 200px;
     margin: 0;
     overflow:scroll;
-    background-color:#DDDDDD;
+    /*background-color:#DDDDDD;*/
+    background-color: #FF9933 ;
     
 }
 
