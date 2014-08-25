@@ -1,4 +1,4 @@
-<!DOCTYPE>
+﻿<!DOCTYPE>
 <html>
     <head>
         <title>作品集</title>
@@ -29,7 +29,7 @@
                     <button id="menu-button">Menu</button>
                     <a href="index.html"><li class="side-bar-li">首頁</li></a>
                     <a href="about-me.html"><li class="side-bar-li">關於我</li></a>
-                    <a href="works.html"><li class="side-bar-li">作品集</li></a>
+                    <a href="works.php"><li class="side-bar-li">作品集</li></a>
                     <a href="mini-movie.html"><li class="side-bar-li">微電影</li></a>
                     <a href="contact-me.html"><li class="side-bar-li">連絡我</li></a>
                 </ul>
