@@ -26,6 +26,14 @@ $(document).ready(function(){
 	 $('.' + categary ).css("box-shadow","5px 2px 6px #000");
 	 waterfall();
     }); 
+    
+    $('.item').click(function() {
+	 $('.onselect').children('img').attr("width",width);
+	 $('.onselect').removeClass("onselect");
+	 $(this).addClass("onselect");
+	 $(this).children('img').attr("width",width * 3);
+	 waterfall();
+    });
 });
 
 var SetToOneSide = function() {
@@ -48,4 +56,8 @@ var SetFontSize = function(num) {
     var width = window.innerWidth;
     var fontsize = Math.ceil(width * 0.45 * num);
     $('.about-me-div').css("font-size",fontsize);
+}
+var PicPopout = function() {
+    
+
 }

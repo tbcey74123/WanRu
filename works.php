@@ -53,6 +53,7 @@ $pic = glob('./media/pics/EggplantInnovationWorkshop/*/*/*.jpg');
                 </div>
                 <div id="nav-bar">                
                 </div>
+		<div class="onselect"><img></img></div>
             </div>
             <div id="footer">
             </div>
