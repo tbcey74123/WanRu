@@ -32,7 +32,8 @@ $(document).ready(function(){
 	 $('.onselect').children('img').attr("width",width);
 	 $('.onselect').removeClass("onselect");
 	 $(this).addClass("onselect");
-	 $('.onselect img').attr("width",width * 2);
+	 $('.onselect img').attr("width",width * 5);
+	    
 	 waterfall();
     });
 });
@@ -57,8 +58,4 @@ var SetFontSize = function(num) {
     var width = window.innerWidth;
     var fontsize = Math.ceil(width * 0.45 * num);
     $('.about-me-div').css("font-size",fontsize);
-}
-var PicPopout = function() {
-    
-
 }
