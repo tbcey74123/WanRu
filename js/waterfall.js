@@ -1,9 +1,8 @@
-$(function(){
+$(document).ready(function() {
 	$('.item img').attr("width",width);
 	$('#main-frame').imagesLoaded(function () {
 		waterfall();
 	});
-
 });
 
 var waterfall = function() {

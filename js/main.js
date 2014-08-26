@@ -18,23 +18,14 @@ $(document).ready(function(){
 	$('.about-me-div').css("height",Math.ceil(window.innerWidth * 0.45 * 1.25));
     });
 
-    $('#classA').click(function() {
-	$('.item img').attr("width","0");
-	$('.classA img').attr("width",width);
-    	waterfall();
-    });
-    $('#classB').click(function() {
-	$('.item img').attr("width","0");
-	$('.classB img').attr("width",width);
-    	waterfall();
-    });
-
-    $('#all-work').click(function() {
-	$('.item img').attr("width",width);
-	waterfall();
-    });
-
-    
+    $('#menu ul li').click(function() {
+	 var categary = this.id;
+	 $('.item img').attr("width","0");
+	 $('.item').css("box-shadow","none");
+	 $('.' + categary + ' img').attr("width",width);
+	 $('.' + categary ).css("box-shadow","5px 2px 6px #000");
+	 waterfall();
+    }); 
 });
 
 var SetToOneSide = function() {
