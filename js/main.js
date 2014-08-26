@@ -31,7 +31,7 @@ $(document).ready(function(){
 	 $('.onselect').children('img').attr("width",width);
 	 $('.onselect').removeClass("onselect");
 	 $(this).addClass("onselect");
-	 $(this).children('img').attr("width",width * 3);
+	 $('.onselect img').attr("width",width * 2);
 	 waterfall();
     });
 });

@@ -8,6 +8,8 @@ $(document).ready(function() {
 var waterfall = function() {
 	$('#main-frame').masonry({
 		itemSelector: '.item',
+		columnWidth: width,
+		gutter: 10,
 		animate: true
 	});
 }

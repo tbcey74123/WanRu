@@ -45,6 +45,7 @@
                 <div id="main-frame">    
 <?php
 $pic = glob('./media/pics/EggplantInnovationWorkshop/*/*/*.jpg');
+shuffle($pic);
 	for( $i = 0; $pic[$i]; $i++) {
 		$catogary = split("/",$pic[$i])[4];
 		echo "<div class=\"item " . $catogary . "\"><img src=\"media/" . str_replace("./media/","",$pic[$i]) . "\"></img></div>";
@@ -53,7 +54,6 @@ $pic = glob('./media/pics/EggplantInnovationWorkshop/*/*/*.jpg');
                 </div>
                 <div id="nav-bar">                
                 </div>
-		<div class="onselect"><img></img></div>
             </div>
             <div id="footer">
             </div>
