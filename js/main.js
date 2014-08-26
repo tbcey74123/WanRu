@@ -22,19 +22,45 @@ $(document).ready(function(){
 	 var categary = this.id;
 	 $('.item img').attr("width","0");
 	 $('.item').css("box-shadow","none");
-	 $('.onselect').removeClass("onselect");
 	 $('.' + categary + ' img').attr("width",width);
 	 $('.' + categary ).css("box-shadow","5px 2px 6px #000");
 	 waterfall();
     }); 
     
     $('.item').click(function() {
-	 $('.onselect').children('img').attr("width",width);
-	 $('.onselect').removeClass("onselect");
-	 $(this).addClass("onselect");
-	 $('.onselect img').attr("width",width * 5);
+	 var src = $(this).children('img').attr("src");
+	 
+	 $('#tmp img').attr("src",src);
+
+	 $('#tmp').css("display","block");
+	 var displaywidth = $('#tmp img').width();
+	 var displayheight = $('#tmp img').height();
+	 $('#tmp').css("display","none");
+	 
+
+	 while( displaywidth > window.innerWidth || displayheight > window.innerHeight ) {
+		displaywidth = Math.round(displaywidth * 0.7);
+		displayheight = Math.round(displayheight * 0.7);
+	 }
+
+	 $('#display img').attr("src",src);
+	 $('#display img').attr("width",displaywidth)
+	 $('#display-div').css("display","block");
 	    
+	 var displayleft = (window.innerWidth - displaywidth) / 2 ;
+	 var displaytop = (window.innerHeight - displayheight) / 2 ;
+	 $('#display').css({
+		"position": "relative",
+		"top": displaytop,
+		"left": displayleft
+	 });
+
 	 waterfall();
+    });
+
+    $('#display-div, #display img').click(function() {
+	 $('#display-div').css("display","none");
+	
     });
 });
 

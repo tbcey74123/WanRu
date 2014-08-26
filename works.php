@@ -41,6 +41,10 @@
                     <a href="contact-me.html"><li class="side-bar-li">連絡我</li></a>
                 </ul>
             </div>
+	    <div id="tmp"><img></img></div>
+	    <div id="display-div">
+		<div id="display"><img></img></div>
+            </div>
             <div id="works-content">
                 <div id="main-frame">    
 <?php
