@@ -22,6 +22,7 @@ $(document).ready(function(){
 	 var categary = this.id;
 	 $('.item img').attr("width","0");
 	 $('.item').css("box-shadow","none");
+	 $('.onselect').removeClass("onselect");
 	 $('.' + categary + ' img').attr("width",width);
 	 $('.' + categary ).css("box-shadow","5px 2px 6px #000");
 	 waterfall();
