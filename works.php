@@ -15,9 +15,16 @@
             <div id="header">
                 <div id="menu">
                     <ul>
-			<li id="classA" class="menu-li">茄子女孩X創意工作室</li>
-                        <li id="classB" class="menu-li">茄子女孩X小漫畫</li>
-                        <li id="all-work" class="menu-li">光明專屬X奪目設計</li>
+			<li id="Card-design" class="menu-li">卡片設計</li>
+                        <li id="Cover-design" class="menu-li">封面設計</li>
+			<li id="DM-design" class="menu-li">傳單設計</li>
+			<li id="Illustration-design" class="menu-li">圖像設計</li>
+			<li id="Logo-design" class="menu-li">圖徽設計</li>
+			<li id="Name-Card-design" class="menu-li">名牌設計</li>
+			<li id="Poster-design" class="menu-li">海報設計</li>
+			<li id="T-shirt-design" class="menu-li">衣服設計</li>
+			<li id="Typesetting-design" class="menu-li">海報設計</li>
+			<li id="Poster-design" class="menu-li">排版設計</li>
                     </ul>
                 </div>
             </div>
@@ -34,14 +41,18 @@
                     <a href="contact-me.html"><li class="side-bar-li">連絡我</li></a>
                 </ul>
             </div>
+	    <div id="tmp"><img></img></div>
+	    <div id="display-div">
+		<div id="display"><img></img></div>
+            </div>
             <div id="works-content">
                 <div id="main-frame">    
 <?php
-	$pic = glob('./pic/work/*/*');
-	shuffle($pic);
+$pic = glob('./media/pics/EggplantInnovationWorkshop/*/*/*.jpg');
+shuffle($pic);
 	for( $i = 0; $pic[$i]; $i++) {
-		$catogary = split("/",$pic[$i])[3];
-		echo "<div class=\"item " . $catogary . "\"><img src=\"pic/" . str_replace("./pic/","",$pic[$i]) . "\"></img></div>";
+		$catogary = split("/",$pic[$i])[4];
+		echo "<div class=\"item " . $catogary . "\"><img src=\"media/" . str_replace("./media/","",$pic[$i]) . "\"></img></div>";
 	}
 ?>
                 </div>
