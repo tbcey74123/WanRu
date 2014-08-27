@@ -95,7 +95,7 @@ body {
     
 }
 #about-me-top {
-    background-image: url(media/pics/profile-picture.jpg);
+    background-image: url(../media/pics/profile-picture.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-color: #F5F5F5;
