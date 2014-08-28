@@ -190,3 +190,31 @@ h1 {
     margin: 0 auto ;
     text-align: center;
 }
+label {
+    border-bottom: solid ;
+}
+form {
+    top: 50%;
+}
+label {
+    display: inline-block;
+    padding: 0 auto;
+}
+
+input {
+    display: inline-block;
+}
+input[type="text"]{
+    height: 14px;
+    line-height: 14px;
+    border-radius: 5px;
+    padding: 10px 10px ;
+    vertical-align: middle;
+    color:#666;
+}
+#blank {
+    height: 20%;
+}
+#please-wait {
+    margin: 0 auto ;
+}
