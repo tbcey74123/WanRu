@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	QueryLoader.selectorPreload = "body";
+	QueryLoader.selectorPreload = "#side-bar";
 	QueryLoader.init();
 
     SetFontSize(0.06);
@@ -20,10 +20,12 @@ $(document).ready(function(){
         
     	$('.menu-button').hover(function() {
 		var src = $(this).css("background-image").replace("_1.png",".png");
+		preloadImg(src);
 		$(this).css("background-image",src);
 	},
 	function() {
 		var src = $(this).css("background-image").replace(".png","_1.png");
+		preloadImg(src);
 		$(this).css("background-image",src);
 
 	});
@@ -174,4 +176,13 @@ var SetTextToMiddle = function() {
  	$('#' + text_id).css("top",text_top);
     }
 
+}
+
+var preloadImg = function(src) {
+	var img = new Image();
+
+	src = src.split("WanRu//");
+	src = src[1].replace(")","");
+
+	img.src = src;
 }
