@@ -60,19 +60,23 @@ $(document).ready(function(){
 	$('.menu-icon-div').hover(function() {
 		$('.menu-icon-div img').each(function() {
 			var src = this.src.replace("2.png","1.png");
+			preloadImg(src);
 			this.src = src;
 		});
 		var tar = $(this).find("img");
 		var src = tar[0].src.replace("1.png","pop.png");
+			preloadImg(src);
 		tar[0].src = src;
 	},
 	function() {
 		$('.menu-icon-div img').each(function() {
 			var src = this.src.replace("1.png","2.png");
+			preloadImg(src);
 			this.src = src;
 		});
 		var tar = $(this).find("img");
 		var src = tar[0].src.replace("pop.png","2.png");
+			preloadImg(src);
 		tar[0].src = src;
 	});
 
@@ -181,8 +185,9 @@ var SetTextToMiddle = function() {
 var preloadImg = function(src) {
 	var img = new Image();
 
-	src = src.split("WanRu//");
-	src = src[1].replace(")","");
+	src = src.split("media");
+	src = "media" + src[1];
+	src = src.replace(")","");
 
 	img.src = src;
 }
