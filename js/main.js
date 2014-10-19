@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	QueryLoader.selectorPreload = "body";
+	QueryLoader.init();
+
     SetFontSize(0.06);
     SetTextToMiddle();
     ResizeTopPic();
