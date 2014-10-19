@@ -1,7 +1,6 @@
 $(document).ready(function(){
     SetFontSize(0.06);
     SetTextToMiddle();
-    ResizeTopPic();
 
     $('#menu-button').click(function(){
         $('#side-bar').animate({left: "0px"},700);
@@ -18,7 +17,6 @@ $(document).ready(function(){
 	    SetFontSize(0.06);
         }    	
 	$('.about-me-div').css("height",Math.ceil(window.innerWidth * 0.45 * 1.25));
-	ResizeTopPic();
 	SetTextToMiddle();
     });
 
@@ -68,10 +66,6 @@ $(document).ready(function(){
     });
 });
 
-var ResizeTopPic = function() {
-    $('#about-me-pic img').attr("height",window.innerHeight);
-}
-
 var SetToOneSide = function() {
 	$('.about-me-right').addClass("about-me-left");
 	$('.about-me-left').css("width","90%");
@@ -91,11 +85,7 @@ var SetToBothSide = function() {
 var SetFontSize = function(num) {
     var width = window.innerWidth;
     var fontsize = Math.ceil(width * 0.45 * num);
-    var top_fontsize = Math.ceil(width / 1650 * 120);
-    $('.about-me-div').css("font-size",fontsize + "px");
-    $('#name h1').css("font-size",top_fontsize + "px");
-    $('#name').css("top",Math.ceil($('#about-me-top').height() - top_fontsize) / 2);
-    $('#name').css("margin-left",Math.ceil(width - top_fontsize * 5) / 2);
+    $('.about-me-div').css("font-size",fontsize);
 }
 
 var SetTextToMiddle = function() {
