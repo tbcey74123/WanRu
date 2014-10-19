@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	QueryLoader.selectorPreload = "#side-bar";
+	QueryLoader.selectorPreload = "#preload";
 	QueryLoader.init();
 
     SetFontSize(0.06);
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	$('#open').css("display","block");
     });
         
-    	$('.menu-button').hover(function() {
+    	/*$('.menu-button').hover(function() {
 		var src = $(this).css("background-image").replace("_1.png",".png");
 		preloadImg(src);
 		$(this).css("background-image",src);
@@ -28,7 +28,7 @@ $(document).ready(function(){
 		preloadImg(src);
 		$(this).css("background-image",src);
 
-	});
+	});*/
 
 
 	$('.menu-icon').hover(function() {
