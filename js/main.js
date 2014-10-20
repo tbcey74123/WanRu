@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	QueryLoader.selectorPreload = "#preload";
-	QueryLoader.init();
 
     SetFontSize(0.06);
     SetTextToMiddle();
@@ -18,7 +16,7 @@ $(document).ready(function(){
 	$('#open').css("display","block");
     });
         
-    	/*$('.menu-button').hover(function() {
+    	$('.menu-button').hover(function() {
 		var src = $(this).css("background-image").replace("_1.png",".png");
 		preloadImg(src);
 		$(this).css("background-image",src);
@@ -28,7 +26,7 @@ $(document).ready(function(){
 		preloadImg(src);
 		$(this).css("background-image",src);
 
-	});*/
+	});
 
 
 	$('.menu-icon').hover(function() {
@@ -190,4 +188,9 @@ var preloadImg = function(src) {
 	src = src.replace(")","");
 
 	img.src = src;
+
+	$(img).load(function() {
+		return 0;
+	});
 }
+

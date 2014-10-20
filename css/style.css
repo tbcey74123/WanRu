@@ -227,15 +227,9 @@ a{
 	background-image: url('..//media/pics/Icons/MenuIcons/LeftSideMenuIcons/open_1.png');
 }
 
-#open:hover {
-	background-image: url('..//media/pics/Icons/MenuIcons/LeftSideMenuIcons/open.png');
-}
 #close {
 	background-image: url('..//media/pics/Icons/MenuIcons/LeftSideMenuIcons/close_1.png');
 	display: none;
-}
-#close:hover {
-	background-image: url('..//media/pics/Icons/MenuIcons/LeftSideMenuIcons/close.png');
 }
 
 ul {
@@ -402,6 +396,3 @@ input[type="text"]{
     margin: 0 auto ;
 }
 
-#preload {
-	display: none;
-}
