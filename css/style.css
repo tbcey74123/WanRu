@@ -65,14 +65,14 @@ a{
 	height: 80px;
 }
 #top-line {
-	width: 89%;
+	width: 85%;
 	height: 1px;
 	position: relative;
 	top: 39px;
 	background-image: url('../media/pics/Icons/FrontPageIcons/line.png');
 }
 #top-button {
-	width: 10%;
+	width: 15%;
 	height: 80px;
 	position: relative;
 	float: right;
@@ -98,8 +98,13 @@ a{
 
 #LOGO {
 	background-image: url('../media/pics/Icons/FrontPageIcons/chietz.png');
-	width: 1300px; 
-	height: 687px;
+	background-size: 100% 100%;
+	//width: 1300px; 
+	//height: 687px;
+	position: relative;
+	top: 50px;
+	width: 50%;
+	height: 50%;
 	margin: 0 auto;
 }
 
@@ -173,7 +178,7 @@ a{
 #side-bar{
 	width: 280px;
 	height: 100%;
-	background-image: url('../media/pics/Icons/MenuIcons/LeftSideMenuIcons/background_2.png');
+	background-image: url('../media/pics/Icons/MenuIcons/LeftSideMenuIcons/background.png');
 	background-size: 100% 100%;
 	opacity: 0.9;
 	float: left;
@@ -182,13 +187,21 @@ a{
 	z-index: 1;
 }
 
-#side-bar-menu {
+#side-bar-logo {
+	width: 76px;
+	height: 99px;
+	background-image: url('../media/pics/Icons/MenuIcons/LeftSideMenuIcons/chie.png');
+	background-size: 100% 100%;
+	margin: 0 auto;
 	position: relative;
-	top: -45px;
+	top: 30px;
+}
+
+#side-bar-menu {
 }
 #side-bar-bottom {
 	position: relative;
-	top: -80px;
+	top: -30px;
 	width: 280px;
 	height: 20px
 	margin: 0 auto;
@@ -201,7 +214,7 @@ a{
 
 .side-bar-li {
     list-style-type: none;
-    border-style:groove;
+    border-style:groove
     border-left: none;
     border-right: none;
     text-align: center;
@@ -217,10 +230,11 @@ a{
 .menu-button {
 	width: 324px;
 	height: 226px;
-	position: relative;
+	position: absolute;
 	left: 280px;
 	background-position: left bottom;
 	background-repeat: no-repeat;
+	float: left;
 }
 
 #open {
