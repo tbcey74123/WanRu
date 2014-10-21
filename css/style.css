@@ -112,6 +112,8 @@ a{
 	width: 80%;
 	height: 92px;
 	margin: 0 auto ;
+	position: relative;
+	top: 50px;
 }
 
 #horizontal-menu li {
@@ -137,7 +139,10 @@ a{
 	height: 40px;
 	background-image: url('../media/pics/Icons/FrontPageIcons/www.png');
 	background-size: 100% 100%;
+	position: absolute;
+	top: 110%;
 }
+
 
 #side-bar li{
 	position: relative;
@@ -200,11 +205,17 @@ a{
 #side-bar-menu {
 }
 #side-bar-bottom {
-	position: relative;
-	top: -30px;
+	position: absolute;
+	top: 95%;
 	width: 280px;
-	height: 20px
+	height: 20px;
 	margin: 0 auto;
+}
+#side-bar-bottom ul {
+	margin: 0 auto;
+}
+#side-bar-bottom li {
+	padding: 0;
 }
 #side-bar-bottom img {
 	width: 121px;
