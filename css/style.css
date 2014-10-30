@@ -1,28 +1,177 @@
-div* {
-    margin: 0 auto;
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain)
+ * */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 標楷體;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+	color: #AAA;
 }
 
-div p {
-    //position: static;
-    //top: 50%;
-    margin: 0 0 46px 0;
+/*Start*/
+#main-wrapper {
+	width: 100%;
+	height: 115%;
+    	background-image: url('../media/pics/Icons/FrontPageIcons/background.png'); 
+	background-repeat: no-repeat;
+	background-size: 100% 115%;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+
+#top {
+	width: 100%;
+	height: 80px;
+}
+#top-line {
+	width: 85%;
+	height: 1px;
+	position: relative;
+	top: 39px;
+	background-image: url('../media/pics/Icons/FrontPageIcons/line.png');
+}
+#top-button {
+	width: 15%;
+	height: 80px;
+	position: relative;
+	float: right;
+	display: inline;
 }
 
-#side-bar{
-    float:left;
-    width:200px;
-    height: 100%;
-    background-color: slategrey;
-    opacity: 0.9;
-    position:fixed;
-    left:-200px;
-    
+#FBbutton {
+	position: relative;
+	right: 10px;
+	background-image: url('../media/pics/Icons/FrontPageIcons/fb.png');
+	width: 75px; 
+	height: 84px;
+	float: right;
 }
+
+#Gbutton {
+	position: relative;
+	background-image: url('../media/pics/Icons/FrontPageIcons/g+.png');
+	width: 76px; 
+	height: 82px;
+	float: right;
+}
+
+#LOGO {
+	background-image: url('../media/pics/Icons/FrontPageIcons/chietz.png');
+	background-size: 100% 100%;
+	//width: 1300px; 
+	//height: 687px;
+	position: relative;
+	top: 50px;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+}
+
+#horizontal-menu, #frontpage-menu-popout {
+	width: 80%;
+	height: 91px;
+	margin: 0 auto ;
+	position: relative;
+	top: 35px;
+}
+
+#horizontal-menu li {
+	display: inline;
+	padding: 0 10px;
+}
+
+#horizontal-menu img, #frontpage-menu-popout img {
+	height: 91px;
+}
+
+#frontpage-menu-popout li {
+	display: inline;
+	padding-left: 80px;
+}
+#frontpage-menu-popout li img {
+	opacity: 0;
+}
+
+
+#bottom {
+	width: 100%;
+	height: 40px;
+	background-image: url('../media/pics/Icons/FrontPageIcons/www.png');
+	background-size: 100% 100%;
+	position: absolute;
+	top: 107%;
+}
+
+
+#side-bar li{
+	position: relative;
+	padding-top: 20px;
+}
+
+#side-bar .menu-icon {
+	height: 90px;
+	position: relative;
+}
+
+.menu-icon-div {
+	width: 130px;
+	height: 60px;
+	overflow: visible;
+	margin: 0 auto;
+}
+
+.menu-icon-div img {
+	height: 80px;
+	position: relative;
+	left: -46px;
+	top: -22px;
+}
+
+
+
+
+
 .one-page{
     width: 100%;
     //height: 100%;
@@ -30,9 +179,53 @@ a {
     margin-bottom: 0;
     background-color: #FF9933;
 }
+
+#side-bar{
+	width: 280px;
+	height: 100%;
+	background-image: url('../media/pics/Icons/MenuIcons/LeftSideMenuIcons/background.png');
+	background-size: 100% 100%;
+	opacity: 0.9;
+	float: left;
+	position: fixed;
+	left: -280px;
+	z-index: 1;
+}
+
+#side-bar-logo {
+	width: 76px;
+	height: 99px;
+	background-image: url('../media/pics/Icons/MenuIcons/LeftSideMenuIcons/chie.png');
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+}
+
+#side-bar-menu {
+}
+#side-bar-bottom {
+	position: absolute;
+	top: 95%;
+	width: 280px;
+	height: 20px;
+	margin: 0 auto;
+}
+#side-bar-bottom ul {
+	margin: 0 auto;
+}
+#side-bar-bottom li {
+	padding: 0;
+}
+#side-bar-bottom img {
+	width: 121px;
+	height: 20px;
+}
+
+
 .side-bar-li {
     list-style-type: none;
-    border-style:groove;
+    border-style:groove
     border-left: none;
     border-right: none;
     text-align: center;
@@ -44,6 +237,26 @@ a {
    
     
 }
+
+.menu-button {
+	width: 324px;
+	height: 226px;
+	position: absolute;
+	left: 280px;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#open {
+	background-image: url('..//media/pics/Icons/MenuIcons/LeftSideMenuIcons/open_1.png');
+}
+
+#close {
+	background-image: url('..//media/pics/Icons/MenuIcons/LeftSideMenuIcons/close_1.png');
+	display: none;
+}
+
 ul {
     text-align: center;
     margin : 1em;
@@ -67,20 +280,9 @@ ul li a {
     display: inline-block;
     margin-right: 1em;
 }
-body {
-    left: 200px;
-    margin: 0;
-    overflow:scroll;
-    /*background-color:#DDDDDD;*/
-    background-color: #FF9933 ;
-    
-}
 
 #content {
     text-align: center;
-}
-#main-wrapper {
-    
 }
 .popout {
     left: 0px;
@@ -218,3 +420,4 @@ input[type="text"]{
 #please-wait {
     margin: 0 auto ;
 }
+
