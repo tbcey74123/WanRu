@@ -36,14 +36,8 @@
                     <ul>
 			<li id="Card-design" class="menu-li">卡片設計</li>
                         <li id="Cover-design" class="menu-li">封面設計</li>
-			<li id="DM-design" class="menu-li">傳單設計</li>
-			<li id="Illustration-design" class="menu-li">圖像設計</li>
-			<li id="Logo-design" class="menu-li">圖徽設計</li>
-			<li id="Name-Card-design" class="menu-li">名牌設計</li>
 			<li id="Poster-design" class="menu-li">海報設計</li>
 			<li id="T-shirt-design" class="menu-li">衣服設計</li>
-			<li id="Typesetting-design" class="menu-li">海報設計</li>
-			<li id="Poster-design" class="menu-li">排版設計</li>
                     </ul>
                 </div>
             </div>

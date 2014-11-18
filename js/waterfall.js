@@ -9,9 +9,9 @@ var waterfall = function() {
 	$('#main-frame').masonry({
 		itemSelector: '.item',
 		columnWidth: width,
-		gutter: 10,
+		gutter: 20,
 		animate: true
 	});
 }
 
-var width = Math.round((window.innerWidth - 200) / 5 - 25);
+var width = Math.round((window.innerWidth - 200) / 4 - 25);

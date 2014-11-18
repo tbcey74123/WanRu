@@ -91,12 +91,25 @@ $(document).ready(function(){
 	SetTextToMiddle();
     });
 
+    /*$('#menu ul li').hover(function() {
+	$(this).css("color","#FFAA33");
+    },
+    function() {
+	$(this).css("color","black");
+    });*/
+
     $('#menu ul li').click(function() {
 	 var categary = this.id;
 	 $('.item img').attr("width","0");
-	 $('.item').css("box-shadow","none");
+	 $('.item').css({
+		"border" : "none",
+		 "margin-bottom" : "0px"
+	 });
 	 $('.' + categary + ' img').attr("width",width);
-	 $('.' + categary ).css("box-shadow","5px 2px 6px #000");
+	 $('.' + categary ).css({
+	 	"border" : "5px #E0E0E0 solid",
+		"margin-bottom" : "10px"
+	 });
 	 waterfall();
     }); 
     
@@ -112,8 +125,8 @@ $(document).ready(function(){
 	 
 
 	 while( displaywidth > window.innerWidth || displayheight > window.innerHeight ) {
-		displaywidth = Math.round(displaywidth * 0.7);
-		displayheight = Math.round(displayheight * 0.7);
+		displaywidth = Math.round(displaywidth * 0.8);
+		displayheight = Math.round(displayheight * 0.8);
 	 }
 
 	 $('#display img').attr("src",src);
