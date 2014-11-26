@@ -1,5 +1,10 @@
 $(document).ready(function() {
-	
+
+	if(window.innerWidth > 680)
+		doParallel();
+});
+
+var doParallel = function() {
 	var prev_height = $(window).scrollTop();
 	var S, target_height;
 	$(window).scroll(function() {
@@ -26,13 +31,15 @@ $(document).ready(function() {
 			move(height_now, 6800, S, "contact-page");
 		prev_height = height_now;
 	});
-});
+}
 var sliding = function(height_now) {
 	var position = 3000 - height_now;
 	position *= 3;
-	$("#experience_map").animate({
-		backgroundPosition: position + 'px 0'
-	}, 1);
+	if(position > -3000) {
+		$("#experience_map").animate({
+			backgroundPosition: position + 'px 0'
+		}, 1);
+	}
 }
 var move = function(height_now, base_height, S, target_div) {
 	var target_height;

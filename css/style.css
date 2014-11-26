@@ -398,13 +398,6 @@ form > label {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0 auto;
-  width: 20%;
-  height: 100%;
-  float: left;
-  position: relative;
-  left: 6%;
-  padding: 0 1%;
 }
 .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
