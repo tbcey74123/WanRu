@@ -36,6 +36,7 @@ var sliding = function(height_now) {
 }
 var move = function(height_now, base_height, S, target_div) {
 	var target_height;
+	var opacity;
 	if(height_now < base_height) {
 		$("#" + target_div).css({
 			"position": "absolute",
@@ -64,8 +65,11 @@ var move = function(height_now, base_height, S, target_div) {
 		//target_height = $("#" + target_div + "-content").css("top").replace("px", "");
 		//target_height -= S;
 		target_height = base_height - height_now + 300;
+		opacity = (300 - target_height) / 300;
 		$("#" + target_div + "-content").css({
-			"top": target_height
+			"top": target_height,
+			"opacity": opacity
 		});
+
 	}
 }
