@@ -49,7 +49,9 @@ table {
 
 /* Starts from here */
 body {
+    width: 100%;
     height: 9000px;
+    overflow-x: hidden;
 }
 h1 {
     font-size: 2em;
@@ -234,26 +236,42 @@ div > img {
 #works-page-preview{
     //border-style: dashed;
     //border-width: 0.15em;
-    //height: 60vh;
-    //width: 55vw;
+    height: 60vh;
+    width: 55vw;
     float: left;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: black;
+    //background-color: black;
 }
+.item img {
+    width: 10vw;
+    height: 10vw;
+    margin: 5px;
+    float: left;
+    border: 2px solid gray;
+    display: none;
+}
+.Card-design img{
+    display: block;
+}
+
+
 #works-page-clearlook {
     //border-style: dashed;
     //border-width: 0.15em;
-    //height: 60vh;
-    //width: 25vw;
+    height: 60vh;
+    width: 25vw;
     float: left;
     margin-left: 25px;
     margin-right: 25px;
+    background-size: 100% 100%;
+    border: 2px solid gray;
+    display: none;
 }
 
 #contact-page {
     position: absolute;
-    top: 6600px;
+    top: 6800px;
 }
 
 #contact-page-title {

@@ -22,8 +22,8 @@ $(document).ready(function() {
 		if(height_now < 6600) {
 			move(height_now, 4900, S, "works-page");
 		}
-		if(height_now >= 5400)
-			move(height_now, 6600, S, "contact-page");
+		if(height_now >= 6600)
+			move(height_now, 6800, S, "contact-page");
 		prev_height = height_now;
 	});
 });
@@ -42,11 +42,13 @@ var move = function(height_now, base_height, S, target_div) {
 			"position": "absolute",
 			"top": base_height + "px"
 		});
-	}
-	if(height_now >= base_height){ 
+		$("#" + target_div + "-content").css({
+			"opacity": 0
+		});
+	}else {
 		$("#" + target_div).css({
 			"position": "fixed",
-			"top": "0"
+			"top": 0
 		});
 	}
 	target_height = base_height + 900;
@@ -58,7 +60,8 @@ var move = function(height_now, base_height, S, target_div) {
 			"top": target_height + "px"
 		});
 		$("#" + target_div + "-content").css({
-			"top": "0"
+			"top": "0",
+			"opacity": 1
 		});
 	}
 	if(height_now >= base_height && height_now <= base_height + 300) {

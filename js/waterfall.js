@@ -1,12 +1,16 @@
 $(document).ready(function() {
+	/*var width = $("#works-page-preview").css("width").replace("px", "");
+	width = Math.round(width / 5);*/
+	var width = 150; 
+
 	$('.item img').attr("width",width);
-	$('#main-frame').imagesLoaded(function () {
-		waterfall();
+	$('#works-page-preview').imagesLoaded(function () {
+		waterfall(width);
 	});
 });
 
-var waterfall = function() {
-	$('#main-frame').masonry({
+var waterfall = function(width) {
+	$('#works-page-preview').masonry({
 		itemSelector: '.item',
 		columnWidth: width,
 		gutter: 20,
@@ -14,4 +18,3 @@ var waterfall = function() {
 	});
 }
 
-var width = Math.round((window.innerWidth - 200) / 4 - 25);
