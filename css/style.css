@@ -50,8 +50,8 @@ table {
 /* Starts from here */
 #top-sidebar{
     background-color: #f092a9 ;
-    height: 10vh;
-    width: 100vw;
+    height: 100px;
+    width: 100%;
 }
 #top-sidebar-text{
     float: left;
@@ -59,8 +59,8 @@ table {
     font-size: 1.5em;
     position: relative;
     position: relative;
-    top: 4vh;
-    left: 5vw;
+    top: 40px;
+    left: 50px;
     
 }
 #top-sidebar > img{
@@ -68,30 +68,30 @@ table {
     max-height: 50%;
     float: left;
     position: relative;
-    left: 5vw;
-    top: 4vh;
+    left: 50px;
+    top: 40px;
 }
 .page-title{
     color: white;
-    width: 100vw;
-    height: 15vh;
+    width: 100%;
+    height: 150px;
 }
 .content-wrapper{
-    width:90vw;
+    width:90%;
     margin: 0 auto;
     text-align: center;
 }
 
 .page{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     text-align: center;
 }
 
 #about-text{
     text-align: right;
     margin: 0 auto;
-    padding: 25vh 5vh 25vh 25vh;
+    padding: 250px 50px 250px 250px;
     font-size: 1.25em;
     line-height: 1.25em;
 }
@@ -109,10 +109,10 @@ div > img {
 
 #welcome-image {
     text-align: center;
-    height: 20vh;
+    height: 200px;
     max-width: 100%;
     max-height: 100%;
-    padding: 5vh;
+    padding: 50px;
     //border-style: dashed;
     //border-width: 0.15em;
 
@@ -123,21 +123,24 @@ div > img {
 }
 
 #shortcuts{
-    height: 50vh;
-    padding-top: 1vh;
+    height: 500px;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
     border-style: dashed;
     border-width: 0.15em;
     border-left: none;
     border-right: none;
-    padding-bottom: 2vh;
+    display: block;
 }
 .shortcut{
-    height: 50vh;
-    width: 20vw;
+    margin: 0 auto;
+    height: 100%;
+    width: 20%;
     float: left;
-    padding: 1vw;
     position: relative;
-    left: 1vw;
+    left: 6%;
+    padding: 1%;
+
 }
 .shortcut > img {
     max-height: 100%;
@@ -145,7 +148,7 @@ div > img {
 }
 
 #welcome-page-footer{
-    height: 15vh;
+    height: 150px;
 }
 
 #experience-page-title {
@@ -162,18 +165,14 @@ div > img {
 
 #contact-page-content{
     text-align: left;
-    padding: 10vh 25vh 5vh 15vh;
-}
-
-#experience-page-content{
-    overflow-y: visible;
+    padding: 10% 25% 5% 15%;
 }
 
 #works-page-menu{
-    padding:10vh 10vh 5vh 10vh;
+    padding:10% 10% 5% 10%;
     text-align: right;
-    border-style: dashed;
-    border-width: 0.15em;
+    //border-style: dashed;
+    //border-width: 0.15em;
 }
 
 #works-page-menu > ul > li {
@@ -189,7 +188,7 @@ div > img {
     padding: 0.15em;
 }
 
-#works-page-menu > ul > li:hover {0e
+#works-page-menu > ul > li:hover {
     background-color: #c9a063;
     border-color: white;
     color: white;
@@ -197,22 +196,23 @@ div > img {
 }
 
 #works-page-preview{
-    border-style: dashed;
-    border-width: 0.15em;
-    height: 60vh;
-    width: 55vw;
+    //border-style: dashed;
+    //border-width: 0.15em;
+    //height: 60vh;
+    //width: 55vw;
     float: left;
-    padding-left: 2.5vh;
-    padding-right: 2.5vh;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: black;
 }
 #works-page-clearlook {
-    border-style: dashed;
-    border-width: 0.15em;
-    height: 60vh;
-    width: 25vw;
+    //border-style: dashed;
+    //border-width: 0.15em;
+    //height: 60vh;
+    //width: 25vw;
     float: left;
-    margin-left: 2.5vh;
-    margin-right: 2.5vh;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 form > input {
@@ -244,7 +244,7 @@ form > label {
 
 #contact-page-footer{
     text-align: right;
-    margin-top: 30vh;
+    margin-top: 300px;
 }
 
 #contact-page-footer-links {
@@ -256,7 +256,7 @@ form > label {
     padding-top: 1em;
 }
 #contact-page-footer-google-and-fb{
-    height: 5vh;   
+    height: 50px;   
     padding-right: 5em;
 }
 
