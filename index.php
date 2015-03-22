@@ -75,17 +75,24 @@
                 <div id="works-page-content" class="content-wrapper">
                     <div id="works-page-menu">
                         <ul>
-                            <li>CARD</li>
-                            <li>POSTER</li>
-                            <li>T-SHIRT</li>
-                            <li>FRONT COVER</li>
+                            <li id="Card-design">CARD</li>
+                            <li id="Poster-design">POSTER</li>
+                            <li id="T-shirt-design">T-SHIRT</li>
+                            <li id="Cover-design">FRONT COVER</li>
                         </ul>
                     </div>
                     <div id="works-page-preview">
-                    
+<?php
+	$pic = glob('./media/pics/EggplantInnovationWorkshop/*/*/*.jpg');
+	shuffle($pic);
+        	for($i = 0; $pic[$i]; $i++) {
+                	$catogary = split("/", $pic[$i])[4];
+                	echo "<div class=\"item " . $catogary . "\"><img src=\"media/" . str_replace("./media/","",$pic[$i]) . "\"></img></div>";
+        	}
+?>
+
                     </div>
                     <div id="works-page-clearlook">
-                    
                     </div>
                 </div>
             </div> 

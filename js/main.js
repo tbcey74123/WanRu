@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+/*
     SetFontSize(0.06);
     SetTextToMiddle();
     ResizeTopPic();
@@ -91,35 +91,32 @@ $(document).ready(function(){
 	SetTextToMiddle();
     });
 
-    /*$('#menu ul li').hover(function() {
+    $('#menu ul li').hover(function() {
 	$(this).css("color","#FFAA33");
     },
     function() {
 	$(this).css("color","black");
-    });*/
-
-    $('#menu ul li').click(function() {
+    });
+*/
+    $('#works-page-menu ul li').click(function() {
 	 var categary = this.id;
-	 $('.item img').attr("width","0");
-	 $('.item').css({
-		"border" : "none",
-		 "margin-bottom" : "0px"
+	 $('.item img').css({
+		 "display": "none"
 	 });
-	 $('.' + categary + ' img').attr("width",width);
-	 $('.' + categary ).css({
-	 	"border" : "5px #E0E0E0 solid",
-		"margin-bottom" : "10px"
+	 $('.' + categary + " img").css({
+		 "display": "block"
 	 });
-	 waterfall();
     }); 
     
     $('.item').click(function() {
 	 var src = $(this).children('img').attr("src");
 	 
-	 $('#tmp img').attr("src",src);
+	 $('#works-page-clearlook').css({
+		"background-image": "url('" + src + "')"	 
+	 });
 
-	 $('#tmp').css("display","block");
-	 var displaywidth = $('#tmp img').width();
+	 $('#works-page-clearlook').css("display","block");
+/*	 var displaywidth = $('#tmp img').width();
 	 var displayheight = $('#tmp img').height();
 	 $('#tmp').css("display","none");
 	 
@@ -141,14 +138,25 @@ $(document).ready(function(){
 		"left": displayleft
 	 });
 
-	 waterfall();
+	 waterfall();*/
     });
-
-    $('#display-div, #display img').click(function() {
-	 $('#display-div').css("display","none");
 	
+    $("#shortcuts div").click(function() {
+	var target = this.id.replace("shortcut-", "");
+	var target_height = $("#" + target + "-page").css("top");
+	Scrolling(parseInt(target_height));
     });
+   
 });
+
+var Scrolling = function(target_height) {
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+	$body.animate({
+		scrollTop: target_height
+	}, target_height * 0.1 + 1000);
+	
+	return true;
+}
 
 var ResizeTopPic = function() {
     $('#about-me-pic img').attr("height",window.innerHeight);
