@@ -22,16 +22,16 @@
                         <h1>WELCOME</h1>
                     </div>
                     <div id="shortcuts">
-                        <div class="shortcut" id="shortcut-about">
+                        <div class="hvr-bob" id="shortcut-about">
                             <img src="media/pics/Icons/FrontPageIcons/about.png"></img>
                         </div>
-                        <div class="shortcut" id="shortcut-experience">
+                        <div class="hvr-bob" id="shortcut-experience">
                             <img src="media/pics/Icons/FrontPageIcons/EXPERIENCE.png"></img>
                         </div>
-                        <div class="shortcut" id="shortcut-works">
+                        <div class="hvr-bob" id="shortcut-works">
                             <img src="media/pics/Icons/FrontPageIcons/works.png"></img>
                         </div>
-                        <div class="shortcut" id="shortcut-contact">
+                        <div class="hvr-bob" id="shortcut-contact">
                             <img src="media/pics/Icons/FrontPageIcons/contact.png">
                         </div>
                     </div>
